@@ -1,0 +1,35 @@
+@import "../common/vars";
+@import "../common/mixins";
+
+.def-pagination {
+  height: 30px;
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+.def-button-prev,
+.def-button-next {
+  width: 41px;
+  height: 41px;
+  background: $blue;
+  border-radius: 50%;
+}
+
+.def-button-prev,
+.def-button-next {
+  svg {
+    path {
+      stroke: #fff;
+    }
+  }
+  &:after {
+   content: '';
+  }
+}
